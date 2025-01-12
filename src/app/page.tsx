@@ -3,8 +3,8 @@ import { client } from "@/sanity/lib/client";
 
 
 
-export const revalidate = 10;
-// in second
+export const revalidate = 10; //second
+
 
 export default async function Home() {
   const query = `*[_type=="post"] | order(_createdAt asc){
